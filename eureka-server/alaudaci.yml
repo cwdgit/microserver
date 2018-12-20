@@ -9,6 +9,6 @@ ci:
     - mvn clean install spring-boot:repackage
     - pwd
     - echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-    - cp  eureka-server/target/*.jar  $AUAUDACI_DEST_DIR
+    - cp  target/*.jar  $AUAUDACI_DEST_DIR
     - cp  Dockerfile  $AUAUDACI_DEST_DIR
     - cp  entrypoint.sh $ALAUDACI_DEST_DIR
