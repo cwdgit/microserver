@@ -1,6 +1,6 @@
 version: "0.1.0"
 pre_ci_boot:
-    image: 10.0.0.56:60080/alaudaci/u14java:
+    image: 10.0.0.56:60080/alaudaci/u14java
     tag: oraclejdk8
 ci:
     - echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
