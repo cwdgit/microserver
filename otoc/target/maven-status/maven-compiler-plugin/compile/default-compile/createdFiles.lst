@@ -1,0 +1,11 @@
+com/chinasofti/springcloud/entities/FaceResult.class
+com/chinasofti/springcloud/service/OneToOneComparisonService.class
+com/chinasofti/springcloud/service/impl/OneToOneComparisonServiceImpl.class
+com/chinasofti/springcloud/utils/StringUtils.class
+com/chinasofti/springcloud/entities/FResult.class
+com/chinasofti/springcloud/controller/OneToOneComparisonController.class
+com/chinasofti/springcloud/otoc.class
+com/chinasofti/springcloud/utils/RtrkmsResult.class
+com/chinasofti/springcloud/dao/OneToOneComparisonMapper.class
+com/chinasofti/springcloud/entities/TbTransfer.class
+com/chinasofti/springcloud/utils/UuidUtil.class

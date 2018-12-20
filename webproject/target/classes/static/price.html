@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+</head>
+<div class="container-fluid">
+    <div class="row">
+        <div class='header-nav clearfix'>
+            <img class='pull-left' src="images/logo.png">
+            <div class='pull-right'>
+                <ul class='nav'>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="product.html">产品</a></li>
+                    <li><a class='active' href="price.html">价格</a></li>
+                    <li><a>演示</a></li>
+                    <li><a>服务支持</a></li>
+                    <li><a href="http://192.168.1.252:8081/login.html" target="_blank">登录 </a></li>
+                    <li><a href="http://192.168.1.252:8081/reg.html" target="_blank">注册</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="price-banner">计费方案</div>
+                <div class="price-list">
+                    <div class="price-list-title">Web接口</div>
+                    <div class="table-responsive">
+                        <table class="table all-table">
+                            <thead>
+                                <tr>
+                                    <th>计费方式</th>
+                                    <th>价格</th>
+                                    <th>QPS保障</th>
+                                    <th>方案说明</th>
+                                    <th class="text-center">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="table-1-width">按次计费</td>
+                                    <td class="table-2-width"><a href="price-info.html">0.01~1元/次</a></td>
+                                    <td class="table-3-width">10 QPS</td>
+                                    <td>
+                                        <ol>
+                                            <li>阶梯计费方式，10000次起</li>
+                                            <li>预付费模式，按次计算费用，按天对账，接口调用次数不限</li>
+                                            <li>保障QPS稳定性</li>
+                                        </ol>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-primary" onclick="location.href='recharge.html'">充值</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-1-width">包时计费</td>
+                                    <td class="table-2-width">
+                                        <a href="price-info.html">1000元/QPS/天</a>
+                                        <a href="price-info.html">10000元/QPS/月</a>
+                                    </td>
+                                    <td class="table-3-width">按购买QPS分配</td>
+                                    <td>
+                                        <ol>
+                                            <li>包时期间不限制调用量</li>
+                                            <li>预付费模式，先付费后使用</li>
+                                            <li>保障QPS稳定性</li>
+                                        </ol>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-primary" onclick="location.href='purchase.html'">购买</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="price-list">
+                    <div class="price-list-title">移动端SDK</div>
+                    <div class="table-responsive">
+                        <table class="table all-table">
+                            <thead>
+                                <tr>
+                                    <th>计费方式</th>
+                                    <th>价格</th>
+                                    <th>授权期限</th>
+                                    <th>方案说明</th>
+                                    <th class="text-center">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="table-1-width">联网计费</td>
+                                    <td class="table-2-width"><a href="price-info.html">100000~500000元</a></td>
+                                    <td class="table-3-width">1年</td>
+                                    <td>
+                                        <ol>
+                                            <li>预付费模式，每次授权验证需联网，按次扣除费用。</li>
+                                            <li>接口调用次数不限</li>
+                                            <li>保障QPS稳定性</li>
+                                        </ol>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-primary" onclick="location.href='purchase.html'">购买</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-1-width">离线授权</td>
+                                    <td class="table-2-width">
+                                        <a href="price-info.html">1000000元起</a>
+                                    </td>
+                                    <td class="table-3-width">1年</td>
+                                    <td>
+                                        <ol>
+                                            <li>预付费模式，不限制授权次数</li>
+                                            <li>授权验证无需联网</li>
+                                            <li>保障QPS稳定性</li>
+                                        </ol>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-primary">商务洽谈</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="price-list">
+                        <div class="price-list-title">用户数据库</div>
+                        <div class="table-responsive">
+                            <table class="table all-table">
+                                <thead>
+                                    <tr>
+                                        <th>计费方式</th>
+                                        <th>价格</th>
+                                        <th>QPS保障</th>
+                                        <th>方案说明</th>
+                                        <th class="text-center">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="table-1-width">按底库容量计费</td>
+                                        <td class="table-2-width"><a href="price-info.html">1 元/张/年</a></td>
+                                        <td class="table-3-width">10QPS</td>
+                                        <td>
+                                            <ol>
+                                                <li>预付费模式，按自定义数据库照片存储量计费</li>
+                                                <li>期限内不限制接口调用次数</li>
+                                                <li>保障QPS稳定性</li>
+                                            </ol>
+                                        </td>
+                                        <td class="text-center">
+                                            <button type="button" class="btn btn-primary" onclick="location.href='purchase.html'">购买</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-1-width">按接口调用计费</td>
+                                        <td class="table-2-width">
+                                            <a href="price-info.html">0.01元/次</a>
+                                        </td>
+                                        <td class="table-3-width">10QPS</td>
+                                        <td>
+                                            <ol>
+                                                <li>1.阶梯计费方式，按接口调用次数收费</li>
+                                                <li>预付费模式，不限制调用次数</li>
+                                                <li>保障QPS稳定性</li>
+                                            </ol>
+                                        </td>
+                                        <td class="text-center">
+                                                <button type="button" class="btn btn-primary" onclick="location.href='purchase.html'">购买</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row footer">
+                <div class="col-xs-4 col-sm-2 col-md-2 col-xs-offset-2 col-sm-offset-1 col-md-offset-1">
+                    <img src="images/erweima.png">
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-xs-offset-2 col-sm-offset-2 col-md-offset-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row  footer-tip">
+                <div class="col-xs-20 col-sm-10 col-md-10 col-xs-offset-2 col-sm-offset-1 col-md-offset-1 clearfix">
+                    <span>Copyright 2016.All rights reserved.</span>
+                    <span class="pull-right">电话: +86 10 3344 5566 support@ys.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

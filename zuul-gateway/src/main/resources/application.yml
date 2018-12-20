@@ -1,0 +1,22 @@
+server: 
+  port: 9000
+ 
+spring: 
+  application:
+    name: microservice-zuul-gateway
+ 
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://admin:admin123@eureka-server:7001/eureka/
+  instance:
+    instance-id: gateway.chinasofti.com
+    prefer-ip-address: true 
+ 
+ 
+info:
+  app.name: chinasofti-microserver
+  company.name: www.chinasofti.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+

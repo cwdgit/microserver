@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chinasofti.springcloud.dao.OneToOneComparisonMapper" >
+
+  <insert id="addCallRecord" parameterType="com.chinasofti.springcloud.entities.TbTransfer" >
+     insert into tb_transfer values (#{Id,jdbcType=VARCHAR}, #{inId,jdbcType=VARCHAR}, #{uId,jdbcType=VARCHAR},
+     #{CallState,jdbcType=VARCHAR}, #{Date,jdbcType=VARCHAR}, #{IsDelete,jdbcType=VARCHAR})
+  </insert>
+</mapper>

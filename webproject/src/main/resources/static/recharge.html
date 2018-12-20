@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+</head>
+<div class="container-fluid">
+    <div class="row">
+        <div class='header-nav clearfix'>
+            <img class='pull-left' src="images/logo.png">
+            <div class='pull-right'>
+                <ul class='nav'>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="product.html">产品</a></li>
+                    <li><a class='active' href="price.html">价格</a></li>
+                    <li><a>演示</a></li>
+                    <li><a>服务支持</a></li>
+                    <li><a href="http://192.168.1.252:8081/login.html" target="_blank">登录 </a></li>
+                    <li><a href="http://192.168.1.252:8081/reg.html" target="_blank">注册</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid pur-bg">
+            <div class="row">
+                <div class="price-banner">充值付费</div>
+                <div class='pur-row'>
+                    <div class="speed-row clearfix">
+                        <div class="font active">① 充值金额选择</div>
+                        <div>- - - - - - - - - - - - - - - - - - - - - - - -</div>
+                        <div class="font">② 订单确认</div>
+                        <div>- - - - - - - - - - - - - - - - - - - - - - - -</div>
+                        <div class="font">③ 订单支付</div>
+                    </div>
+                </div>
+                <div class="pur-row clearfix">
+                    <div class="col-xs-20 col-sm-11 col-md-11 clearfix">
+                        <div class="pur-option row">
+                            <div class="col-xs-4 col-sm-2 col-md-2 title">
+                                服务接口：
+                            </div>
+                            <div class="col-xs-20 col-sm-10 col-md-10">
+                                <p class="pur-option-tips">充值金额可用于平台提供的各类预付费服务。</p>
+                                <row>
+                                    <div class="col-xs-6 col-sm-3 col-md-3 pur-option-item">
+                                        <p class="active">1000元</p>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-3 pur-option-item">
+                                        <p>5000元</p>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-3 pur-option-item">
+                                        <p>10000元</p>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-3 pur-option-item">
+                                        <p>20000元</p>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-3 pur-option-item">
+                                        <p>50000元</p>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-3 pur-option-item">
+                                        <p>100000元</p>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-3 pur-option-item">
+                                            <p>其他金额</p>
+                                        </div>
+                                </row>
+                            </div>
+                        </div>
+                        <div class="pur-option row">
+                                <div class="col-xs-4 col-sm-2 col-md-2 title">
+                                </div>
+                                <div class="col-xs-20 col-sm-10 col-md-10">
+                                    <row>
+                                        <div class="col-xs-6 col-sm-3 col-md-3">
+                                                <button type="button" class="btn btn-primary btn-block">确认购买</button>
+                                        </div>
+                                    </row>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row footer">
+                <div class="col-xs-4 col-sm-2 col-md-2 col-xs-offset-2 col-sm-offset-1 col-md-offset-1">
+                    <img src="images/erweima.png">
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-xs-offset-2 col-sm-offset-2 col-md-offset-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row  footer-tip">
+                <div class="col-xs-20 col-sm-10 col-md-10 col-xs-offset-2 col-sm-offset-1 col-md-offset-1 clearfix">
+                    <span>Copyright 2016.All rights reserved.</span>
+                    <span class="pull-right">电话: +86 10 3344 5566 support@ys.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+    $('.pur-option-item').on('click',function(){
+        $('.pur-option-item').find('p').removeClass('active');
+        $(this).find('p').addClass('active')
+    })
+</script>
+
+</html>

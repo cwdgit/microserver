@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+<div class="container-fluid">
+    <div class="row">
+        <div class='header-nav clearfix'>
+            <img class='pull-left' src="images/logo.png">
+            <div class='pull-right'>
+                <ul class='nav'>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a class='active'>产品</a></li>
+                    <li><a href="price.html">价格</a></li>
+                    <li><a>演示</a></li>
+                    <li><a>服务支持</a></li>
+                    <li><a href="http://192.168.1.252:8081/login.html" target="_blank">登录 </a></li>
+                    <li><a href="http://192.168.1.252:8081/reg.html" target="_blank">注册</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class='home-banner'>
+            <img src="images/product1.png">
+            <div class='banner-font product-banner-font clearfix'>
+                <p class="font1">认证比对</p>
+                <p class="font2">人脸与身份证底库比对，实现精确身份认证</p>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <button type="button" class="btn btn-primary btn-lg btn-block">立即使用</button>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <a href="javacript:void(0)" class="btn-a-hollow">技术文档</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+                <div class="home-block-title">
+                    <span>功能介绍</span>
+                </div>
+            <div class="row">
+                <div class="col-xs-16 col-sm-8 col-md-8 col-xs-offset-4 col-sm-offset-2 col-md-offset-2 clearfix">
+                    <p class="text-center">通过对现场抓取照片中的人脸识别、特征值提取，与身份证照片进行比对，完成对人员身份的认证。</p>
+                    <p class="text-center">适用于真实身份认证、认证合一验证等应用场景。</p>
+                    <div class="row" style="padding-top:20px;">
+                        <div class="col-xs-12 col-sm-6 col-md-6 text-right">
+                            <img class="product-img" src="images/2-1.png">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 porduct-desc">
+                            <ul>
+                                <li>不返回和存储任何个人身份信息，保障个人隐私安全</li>
+                                <li>支持1500 QPS并发，高可靠弹性计算支撑体系</li>
+                                <li>99.7%的对比准确度，活体防伪技术保障对比安全可靠</li>
+                                <li>权威的身份证信息，确保认证合一认证精度</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+                <div class="home-block-title">
+                    <span>功能演示</span>
+                </div>
+            <div class="row product-demon">
+                <div class="col-xs-14 col-sm-7 col-md-7 clearfix">
+                    <p style="display: none;" class="title1">比对得分：<a id="Fraction"></a></p>
+                    <p style="display: none;" class="title2" id="PictureEvaluation"></p>
+                    <div class="row product-demon-show">
+                        <div class="col-xs-12 col-sm-6 col-md-6 clearfix ">
+                            <img src="images/aa.jpg" id="img1" style="border: solid 1px #bbb;">
+                            <input type="file" name="photoone" id="file1" style="display: none;">
+                            <p class="s1" onclick="Upload1();">本地上传</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 clearfix">
+                            <img src="images/aa.jpg" id="img2" style="border: solid 1px #bbb;">
+                             <input type="file" name="phototwo" id="file2" style="display: none;">
+                            <p class="s1" onclick="Upload2();">本地上传</p>
+                            <p>图片文件支持PNG、JPG、JPEG、BMP，大小不超过2M。</p>
+                            <p>本示例，如果照片中有多人，会选择检测到的质量最好的人脸。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-10 col-sm-5 col-md-5 clearfix">
+                    <pre class="clearfix">
+                        <p>代码实例：</p>
+                        <div id = "face_list" style="display: none;">
+{
+    "score": <a style="color: black" id="CodeONE"></a>,
+    "face_list": [
+        {
+            "face_token": "<a id="CodeTWO" style="color: black"></a>"
+        },
+        {
+            "face_token": "<a id="CodeTHREE" style="color: black"></a>"
+        }
+    ]
+}
+</div>
+                    </pre>
+                    <button type="button" class="btn btn-default btn-sm">复制代码</button>
+                    <button type="button" class="btn btn-default btn-sm">查看接口文档</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="home-block-title">
+                <span>服务方式</span>
+            </div>
+            <div class="row home-block">
+                <div class="col-xs-8 col-sm-4 col-md-4 clearfix">
+                    <div class="home-block-content">
+                        <p class="title">Web接口</p>
+                        <p class="content">提供丰富的开发接口，支持1:1身份认证比对，1:N识别预警、背景核查，1500QPS高并发支撑能力，提供活体防伪功能防止照片造假。</p>
+                        <p class="content-btn clearfix">
+                            <span class="pull-right">查看接口文档</span>
+                            <span class="pull-right" onclick="location.href='price.html'">服务申请</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-8 col-sm-4 col-md-4 clearfix">
+                    <div class="home-block-content">
+                        <p class="title">移动设备SDK</p>
+                        <p class="content">提供人脸采集、离线识别两种SDK，应用于移动端应用，实现人脸采集、1:1人脸比对，1:N人脸搜索等能力。</p>
+                        <p class="content-btn clearfix">
+                            <span class="pull-right">下载SDK</span>
+                            <span class="pull-right" onclick="location.href='price.html'">服务申请</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-8 col-sm-4 col-md-4 clearfix">
+                    <div class="home-block-content">
+                        <p class="title">个性化数据库定义</p>
+                        <p class="content">为用户提供个性化数据库服务，用户可自定义上传人员相片，并作为比对底库进行功能定制开发。</p>
+                        <p class="content-btn clearfix">
+                            <span class="pull-right" onclick="location.href='price.html'">服务申请</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="home-block-title">
+                <span>计费方案</span>
+            </div>
+            <div class="row home-block">
+                <div class="col-xs-8 col-sm-4 col-md-4 clearfix">
+                    <div class="home-block-content">
+                        <p class="title">按次计费</p>
+                        <p class="content">按照调用接口的类别、次数计费，采用阶梯计费方式，并采用预付费形式。</p>
+                        <p class="content-btn clearfix">
+                            <span class="pull-right" onclick="location.href='purchase.html'">立即采购</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-8 col-sm-4 col-md-4 clearfix">
+                    <div class="home-block-content">
+                        <p class="title">包时计费</p>
+                        <p class="content">按时间计费，在有效期内不限使用次数，但对使用流量进行控制，用户可根据并发需求采购不同的QPS。</p>
+                        <p class="content-btn clearfix">
+                            <span class="pull-right"  onclick="location.href='purchase.html'">立即采购</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-8 col-sm-4 col-md-4 clearfix">
+                    <div class="home-block-content">
+                        <p class="title">大客户</p>
+                        <p class="content">可为大客户个性化定制计费方式，综合次数、时限、流量等维度，灵活计费。</p>
+                        <p class="content-btn clearfix">
+                            <span class="pull-right"  onclick="location.href='purchase.html'">立即采购</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row footer">
+                <div class="col-xs-4 col-sm-2 col-md-2 col-xs-offset-2 col-sm-offset-1 col-md-offset-1">
+                    <img src="images/erweima.png">
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-xs-offset-2 col-sm-offset-2 col-md-offset-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row  footer-tip">
+                    <div class="col-xs-20 col-sm-10 col-md-10 col-xs-offset-2 col-sm-offset-1 col-md-offset-1 clearfix">
+                            <span>Copyright 2016.All rights reserved.</span>
+                            <span class="pull-right">电话: +86 10 3344 5566      support@ys.com</span>
+                        </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    //file1的点击事件
+    function Upload1(){
+      $("#file1").trigger("click");
+    }
+    //file2的点击事件
+    function Upload2(){
+      $("#file2").trigger("click");
+    }
+    //img1图片回显事件
+    $("#file1").change(function(){
+     $("#img1").attr("src",URL.createObjectURL($(this)[0].files[0]));
+     $("#img1").attr("title","img1");
+     isNotNull();
+    });
+    //img2图片回显事件
+    $("#file2").change(function(){
+     $("#img2").attr("src",URL.createObjectURL($(this)[0].files[0]));
+     $("#img2").attr("title","img2");
+     isNotNull();
+    });
+    function isNotNull(){
+        if($("#img1")[0].title!=""&&$("#img2")[0].title!=""){
+		debugger
+            $.ajax({ 
+                //url: "http://192.168.1.252:8083/oneTwoOneComparison/idCardPhoto", 
+				url: "http://OTOC:8001/oneTwoOneComparison/idCardPhoto", 
+                type:"post",
+				dataType : "jsonp",//数据类型为jsonp  
+				jsonp: "jsonpCallback",//服务端用于接收callback调用的function名的参数
+                jsonpCallback: "success_jsonpCallback",
+                data:{"file1":$("#file1").val(),"file2":$("#file2").val()},
+                context: document.body, 
+                success: function(data){
+				    debugger
+                    $("#PictureEvaluation").html(data.data.mapneet.Similarity);
+                    $("#Fraction").html(data.data.mapneet.score);
+                     $("#CodeONE").html(data.data.face_list.score);
+                     $("#CodeTWO").html(data.data.face_list.face_list[0].face_token);
+                     $("#CodeTHREE").html(data.data.face_list.face_list[1].face_token);
+                    $("#face_list").css('display','block')
+                    $(".title1").css('display','block')
+                    $(".title2").css('display','block')   
+                },
+                error:function(){
+                   alert("图片比较错误");
+                },
+            });
+
+        }
+    } 
+</script>
+
+</html>

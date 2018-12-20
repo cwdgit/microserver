@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+</head>
+<div class="container-fluid">
+    <div class="row">
+        <div class='header-nav clearfix'>
+            <img class='pull-left' src="images/logo.png">
+            <div class='pull-right'>
+                <ul class='nav'>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="product.html">产品</a></li>
+                    <li><a class='active' href="price.html">价格</a></li>
+                    <li><a>演示</a></li>
+                    <li><a href="http://192.168.1.252:8081/login.html" target="_blank">登录 </a></li>
+                    <li><a href="http://192.168.1.252:8081/reg.html" target="_blank">注册</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="price-banner">计费方案</div>
+                <div class="price-list">
+                    <div class="price-list-title">Web接口</div>
+                    <div class="price-info-row">
+                        <p class="price-info-title">
+                            <img src="images/dropdown.png">
+                            按次计费
+                        </p>
+                        <p class="price-info-small clearfix">
+                            按实际接口调用次数扣费，使用多少支付多说。按次计费采用预付费模式，需提前向开发账户充值。
+                            <button type="button" class="btn btn-primary pull-right" onclick="location.href='recharge.html'">立即充值</button>
+                        </p>
+                        <div class="table-responsive">
+                            <table class="table all-table">
+                                <thead>
+                                    <tr>
+                                        <th>服务</th>
+                                        <th>接口</th>
+                                        <th>QPS保障</th>
+                                        <th>价格（元/次调用）</th>
+                                        <th>接口机制</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>认证比对</td>
+                                        <td>
+                                            <p><a>身份证号+单人脸照片比对接口</a></p>
+                                            <p><a>身份证照片+单人脸照片比对接口</a></p>
+                                            <p><a>身份证号+姓名+单人脸照片比对接口</a></p>
+                                            <p><a>身份证号+多人脸照片比对接口</a></p>
+                                            <p><a>身份证照片+多人脸照片比对接口</a></p>
+                                            <p><a>身份证号+姓名+多人脸照片比对接口</a></p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                            <p>10</p>
+                                            <p>10</p>
+                                            <p>10</p>
+                                            <p>10</p>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>0.1</p>
+                                            <p>0.1</p>
+                                            <p>0.1</p>
+                                            <p>0.2</p>
+                                            <p>0.2</p>
+                                            <p>0.2</p>
+                                        </td>
+                                        <td>
+                                            <p>同步</p>
+                                            <p>同步</p>
+                                            <p>同步</p>
+                                            <p>同步</p>
+                                            <p>同步</p>
+                                            <p>同步</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>识别预警</td>
+                                        <td>
+                                            <p><a>在逃人员识别预警接口</a></p>
+                                            <p><a>重点人员识别预警接口</a></p>
+                                            <p><a>监所人员识别预警接口</a></p>
+                                            <p><a>自定义人员识别预警接口</a></p>
+                                        </td>
+                                        <td>
+                                            <p>2</p>
+                                            <p>2</p>
+                                            <p>2</p>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>1</p>
+                                            <p>1</p>
+                                            <p>1</p>
+                                            <p>0.1</p>
+                                        </td>
+                                        <td>
+                                            <p>异步、1分钟反馈</p>
+                                            <p>异步、1分钟反馈</p>
+                                            <p>异步、1分钟反馈</p>
+                                            <p>同步</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>背景核查</td>
+                                        <td>
+                                            <p><a>犯罪记录核查接口</a></p>
+                                            <p><a>驾驶员信息核查接口</a></p>
+                                            <p><a>人员信用核查接口</a></p>
+                                        </td>
+                                        <td>
+                                            <p>2</p>
+                                            <p>2</p>
+                                            <p>2</p>
+                                        </td>
+                                        <td>
+                                            <p>1</p>
+                                            <p>1</p>
+                                            <p>1</p>
+                                        </td>
+                                        <td>
+                                            <p>异步、1分钟反馈</p>
+                                            <p>异步、1分钟反馈</p>
+                                            <p>异步、1分钟反馈</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>属性分析</td>
+                                        <td>
+                                            <p><a>单人脸照片人脸属性分析接口</a></p>
+                                            <p><a>多人脸照片人脸属性分析接口</a></p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>0.1</p>
+                                            <p>0.2</p>
+                                        </td>
+                                        <td>
+                                            <p>同步</p>
+                                            <p>同步</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>活体防伪</td>
+                                        <td>
+                                            <p><a>活体防伪检测接口</a></p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>0.1</p>
+                                        </td>
+                                        <td>
+                                            <p>同步</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>证照检测</td>
+                                        <td>
+                                            <p><a>证照检测接口</a></p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>0.1</p>
+                                        </td>
+                                        <td>
+                                            <p>同步</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="price-info-row">
+                            <p class="price-info-title">
+                                <img src="images/dropdown.png">
+                                包时计费
+                            </p>
+                            <p class="price-info-small clearfix">
+                                    按天、按月购买QPS，采用阶梯计费模式，QPS越大单价越低。在包时期限内，调用次数没有限制。
+                                <button type="button" class="btn btn-primary pull-right" onclick="location.href='purchase.html'">立即购买</button>
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table all-table">
+                                    <thead>
+                                        <tr>
+                                            <th>接口类型</th>
+                                            <th>并发</th>
+                                            <th>单价</th>
+                                            <th>说明</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>通用比对接口</td>
+                                            <td>
+                                                <p><a>1 QPS·天</a></p>
+                                                <p><a>5 QPS·天</a></p>
+                                                <p><a>10 QPS·天</a></p>
+                                                <p><a>1 QPS·月</a></p>
+                                                <p><a>5 QPS·月</a></p>
+                                                <p><a>10 QPS·月</a></p>
+                                            </td>
+                                            <td>
+                                                <p>100元</p>
+                                                <p>1000元</p>
+                                                <p>5000元</p>
+                                                <p>2400元</p>
+                                                <p>24000元</p>
+                                                <p>120000元</p>
+                                            </td>
+                                            <td>
+                                                <p>包括认证比对、属性分析、活体防伪、证照检测、自定义数据库预警识别等各接口</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td>警务核查接口</td>
+                                                <td>
+                                                    <p><a>1 QPS·天</a></p>
+                                                    <p><a>5 QPS·天</a></p>
+                                                    <p><a>10 QPS·天</a></p>
+                                                    <p><a>1 QPS·月</a></p>
+                                                    <p><a>5 QPS·月</a></p>
+                                                    <p><a>10 QPS·月</a></p>
+                                                </td>
+                                                <td>
+                                                    <p>100元</p>
+                                                    <p>10000元</p>
+                                                    <p>50000元</p>
+                                                    <p>24000元</p>
+                                                    <p>240000元</p>
+                                                    <p>1200000元</p>
+                                                </td>
+                                                <td>
+                                                    <p>包括识别预警（警务类在逃、监所、重点人员识别接口）、背景核查各接口</p>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row footer">
+                <div class="col-xs-4 col-sm-2 col-md-2 col-xs-offset-2 col-sm-offset-1 col-md-offset-1">
+                    <img src="images/erweima.png">
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-xs-offset-2 col-sm-offset-2 col-md-offset-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row  footer-tip">
+                <div class="col-xs-20 col-sm-10 col-md-10 col-xs-offset-2 col-sm-offset-1 col-md-offset-1 clearfix">
+                    <span>Copyright 2016.All rights reserved.</span>
+                    <span class="pull-right">电话: +86 10 3344 5566 support@ys.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

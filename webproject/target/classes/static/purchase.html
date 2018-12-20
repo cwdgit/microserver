@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+</head>
+<div class="container-fluid">
+    <div class="row">
+        <div class='header-nav clearfix'>
+            <img class='pull-left' src="images/logo.png">
+            <div class='pull-right'>
+                <ul class='nav'>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="product.html">产品</a></li>
+                    <li><a class='active' href="price.html">价格</a></li>
+                    <li><a>演示</a></li>
+                    <li><a>服务支持</a></li>
+                    <li><a href="http://192.168.1.252:8081/login.html" target="_blank">登录 </a></li>
+                    <li><a href="http://192.168.1.252:8081/reg.html" target="_blank">注册</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid pur-bg">
+            <div class="row">
+                <div class="price-banner">服务采购</div>
+                <div class='pur-row'>
+                    <div class="speed-row clearfix">
+                        <div class="font active">① 服务内容选择</div>
+                        <div>- - - - - - - - - - - - - - - - - - - - - - - -</div>
+                        <div class="font">② 订单确认</div>
+                        <div>- - - - - - - - - - - - - - - - - - - - - - - -</div>
+                        <div class="font">③ 订单支付</div>
+                    </div>
+                </div>
+                <div class="pur-row clearfix">
+                    <div class="col-xs-18 col-sm-9 col-md-9 clearfix">
+                        <div class="pur-option row">
+                            <div class="col-xs-4 col-sm-2 col-md-2 title">
+                                服务接口：
+                            </div>
+                            <div class="col-xs-20 col-sm-10 col-md-10">
+                                <row>
+                                    <div class="col-xs-8 col-sm-4 col-md-4 pur-option-item pur-click-contrast">
+                                        <p class="active">认证比对</p>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-4 col-md-4 pur-option-item pur-click-contrast">
+                                        <p>识别预警</p>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-4 col-md-4 pur-option-item pur-click-contrast">
+                                        <p>背景核查</p>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-4 col-md-4 pur-option-item pur-click-contrast">
+                                        <p>属性分析</p>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-4 col-md-4 pur-option-item pur-click-contrast">
+                                        <p>活体防伪</p>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-4 col-md-4 pur-option-item pur-click-contrast">
+                                        <p>证照检测</p>
+                                    </div>
+                                </row>
+                            </div>
+                        </div>
+                        <div class="pur-option row">
+                            <div class="col-xs-4 col-sm-2 col-md-2 title">
+                                服务时间：
+                            </div>
+                            <div class="col-xs-20 col-sm-10 col-md-10">
+                                <row>
+                                    <div class="col-xs-8 col-sm-4 col-md-4 pur-option-item pur-click-date">
+                                        <p>按天购买</p>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-4 col-md-4 pur-option-item pur-click-date">
+                                        <p class="active">按月购买</p>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-4 col-md-4 pur-option-item pur-click-date">
+                                        <p>按年购买</p>
+                                    </div>
+                                </row>
+                            </div>
+                        </div>
+                        <div class="pur-option row">
+                            <div class="col-xs-4 col-sm-2 col-md-2 title">
+                                并发保障：
+                            </div>
+                            <div class="col-xs-20 col-sm-10 col-md-10">
+                                <row>
+                                    <div class="col-xs-24 col-sm-12 col-md-12">
+                                        <form class="form-inline pur-form">
+                                            <select class="form-control">
+                                                <option>10</option>
+                                            </select>
+                                            <span>QPS（最低1QPS并发，最高100QPS并发。）</span>
+                                        </form>
+                                    </div>
+                                </row>
+                            </div>
+                        </div>
+                        <div class="pur-option row">
+                                <div class="col-xs-4 col-sm-2 col-md-2 title">
+                                    购买时长：
+                                </div>
+                                <div class="col-xs-20 col-sm-10 col-md-10">
+                                    <row>
+                                        <div class="col-xs-24 col-sm-12 col-md-12">
+                                            <form class="form-inline pur-form">
+                                                <select class="form-control">
+                                                    <option>6</option>
+                                                </select>
+                                                <span>月</span>
+                                            </form>
+                                        </div>
+                                    </row>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-3 clearfix">
+                        <div class="pru-config pull-right">
+                            <div class="title">当前配置</div>
+                            <p>服务接口： 认证比对</p>
+                            <p>时间单位： 按月购买</p>
+                            <p>并发保障：10 QPS</p>
+                            <p>购买时长：6月</p>
+                            <p>费用总计：</p>
+                            <p class="price-total">￥ 4800.00</p>
+                            <p class="price-total-small">省￥1200.00</p>
+                            <p>
+                                <button type="button" class="btn btn-primary">确认购买</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row footer">
+                <div class="col-xs-4 col-sm-2 col-md-2 col-xs-offset-2 col-sm-offset-1 col-md-offset-1">
+                    <img src="images/erweima.png">
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-xs-offset-2 col-sm-offset-2 col-md-offset-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2">
+                    <ul class="footer-list">
+                        <li>开发资源</li>
+                        <li>接口说明</li>
+                        <li>SDK下载</li>
+                        <li>开发支持</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row  footer-tip">
+                <div class="col-xs-20 col-sm-10 col-md-10 col-xs-offset-2 col-sm-offset-1 col-md-offset-1 clearfix">
+                    <span>Copyright 2016.All rights reserved.</span>
+                    <span class="pull-right">电话: +86 10 3344 5566 support@ys.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(".pur-click-contrast").on('click', function(){
+        if($(this).find('p').hasClass('active')){
+            $(this).find('p').removeClass('active')
+        }else{
+            $(this).find('p').addClass('active')
+        }
+    })
+
+    $(".pur-click-date").on('click', function(){
+        $(".pur-click-date").find('p').removeClass('active')
+        $(this).find('p').addClass('active');
+    })
+</script>
+
+</html>
