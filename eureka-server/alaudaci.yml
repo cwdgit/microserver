@@ -5,9 +5,11 @@ pre_ci_boot:
 ci:
     - echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     - pwd 
+    - cd eureka-server
     - mvn clean install spring-boot:repackage
     - pwd
     - echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-    - cp  target/*.jar  $AUAUDACI_DEST_DIR
-    - cp  Dockerfile  $AUAUDACI_DEST_DIR
-    - cp  entrypoint.sh $ALAUDACI_DEST_DIR
+    - cd ../
+    - cp  eureka-server/target/*.jar  $AUAUDACI_DEST_DIR
+    - cp  eureka-server/Dockerfile  $AUAUDACI_DEST_DIR
+    - cp  eureka-server/entrypoint.sh $ALAUDACI_DEST_DIR
