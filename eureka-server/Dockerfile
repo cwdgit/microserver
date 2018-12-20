@@ -1,6 +1,6 @@
 FROM openjdk:8-jre-alpine
 
-ADD target/microservice.jar /app.jar
+COPY microservice.jar /app.jar
 
 ADD entrypoint.sh entrypoint.sh
 RUN chmod 755 entrypoint.sh 
