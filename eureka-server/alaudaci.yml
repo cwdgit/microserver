@@ -6,6 +6,7 @@ ci:
     - echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     - pwd 
     - cd  eureka-server
+    - mvn clean install spring-boot:repackage
     - pwd
     - echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     - cp  target/CoreBase-0.0.1-SNAPSHOT.jar  $AUAUDACI_DEST_DIR
