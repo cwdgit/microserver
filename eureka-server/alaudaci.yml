@@ -5,7 +5,6 @@ pre_ci_boot:
 ci:
     - echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     - pwd 
-    - cd  eureka-server
     - mvn clean install spring-boot:repackage
     - pwd
     - echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
