@@ -12,4 +12,3 @@ ci:
     - cp  target/*.jar  $ALAUDACI_DEST_DIR
     - cp  Dockerfile  $ALAUDACI_DEST_DIR
     - cp  entrypoint.sh $ALAUDACI_DEST_DIR
-    - cd $ALAUDACI_DEST_DIR
