@@ -9,7 +9,6 @@ ci:
     - mvn clean install spring-boot:repackage
     - pwd
     - echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-    - cd ../
     - cp  target/*.jar  $ALAUDACI_DEST_DIR
     - cp  Dockerfile  $ALAUDACI_DEST_DIR
     - cp  entrypoint.sh $ALAUDACI_DEST_DIR
