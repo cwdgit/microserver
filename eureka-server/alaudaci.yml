@@ -10,6 +10,6 @@ ci:
     - pwd
     - echo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     - cd ../
-    - cp  eureka-server/target/*.jar  $ALAUDACI_DEST_DIR
-    - cp  eureka-server/Dockerfile  $ALAUDACI_DEST_DIR
-    - cp  eureka-server/entrypoint.sh $ALAUDACI_DEST_DIR
+    - cp  target/*.jar  $ALAUDACI_DEST_DIR
+    - cp  Dockerfile  $ALAUDACI_DEST_DIR
+    - cp  entrypoint.sh $ALAUDACI_DEST_DIR
